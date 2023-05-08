@@ -101,9 +101,107 @@ nav {
     gap: 0px;
     overflow: hidden;
     padding: 0px;
-    max-width: 100%;
+    max-width: 1fr;
     background-color: rgb(234, 233, 228);
   }
+
+  /*MY SKILS--------------------------------*/
+
+  .skills {
+    font-family: montserrat, sans-serif;
+    background-color: #E8BA28;
+    padding: 30px;
+    border-radius: 67px;
+    text-align: right;
+    margin-right: 70%;
+    font-size: 25px;
+  }
+  
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: poppins, sans-serif;
+    padding: 80px;
+
+  
+  }
+
+  .uxskills, .technicalSkills, .softSkils{
+    justify-content: space-evenly;
+    max-width: 33%;
+    align-items: center;
+    grid-template-rows: 300px, 300px, 300px;
+    grid-template-areas: 
+    "uxskills"
+    "technicalSkills"
+    "softSkills";
+  }
+  
+  .one, .two, .three {
+    text-align: left;
+    color: white;
+    background-color: #2E2E2E;
+    border-radius: 25px;
+    flex-flow: column nowrap;
+    gap: 14px;
+    padding-right: 90px;
+    padding-left: 10px;
+    width: fit-content;
+
+  }
+
+
+
+/*Mywork------------------------------*/
+
+.myWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.workContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: poppins, sans-serif;
+  padding: 80px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.workContainer p {
+  word-wrap: break-word;
+  text-align: left;
+}
+
+
+.workContainer button {
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 10px;
+  border-color: #D9D9D9;
+  outline: none;
+  font-family: poppins, sans-serif;
+  background-color: #D9D9D9;
+  font-weight: 200px;
+}
+
+.work {
+  font-family: montserrat, sans-serif;
+  background-color: #E8BA28;
+  padding: 30px;
+  border-radius: 67px;
+  text-align: right;
+  margin-right: 70%;
+  font-size: 25px;
+}
+
 
 /*footer----------------------------*/
 
@@ -198,3 +296,22 @@ nav {
     text-align: right;
     max-width: 1400px;
   }
+  
+/*mobile --------------------------------------------*/
+
+@media only screen and (max-width:600){
+  .flexContainer{
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "uxskills"
+    "technicalSkills"
+    "softSkills"
+    ;
+  }
+
+}
