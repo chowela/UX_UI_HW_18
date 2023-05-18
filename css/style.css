@@ -1,4 +1,6 @@
-
+body{
+  margin: 0px !important;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -37,7 +39,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px 0px;
-    max-width: 1200px;
+    max-width: 100%;
+    
     margin: 0 auto;
   }
   
@@ -102,7 +105,7 @@ nav {
     gap: 0px;
     overflow: hidden;
     padding: 0px;
-    max-width: 1fr;
+    width: 100%;
     background-color: rgb(234, 233, 228);
   }
 
@@ -120,7 +123,6 @@ nav {
   
   .flexContainer {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     font-family: poppins, sans-serif;
     padding: 80px;
@@ -130,13 +132,8 @@ nav {
 
   .uxskills, .technicalSkills, .softSkils{
     justify-content: space-evenly;
-    max-width: 33%;
+    width: 33%;
     align-items: center;
-    grid-template-rows: 300px, 300px, 300px;
-    grid-template-areas: 
-    "uxskills"
-    "technicalSkills"
-    "softSkills";
   }
   
   .one, .two, .three {
@@ -301,7 +298,8 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
+    flex-direction: column;
   }
   
   .container ul {
@@ -316,7 +314,9 @@ nav {
   
   .right img {
     float: none;
-    margin: 0 auto;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: auto;
   }
   
   .right p {
@@ -340,19 +340,15 @@ nav {
     flex-direction: column;
     padding: 20px;
   }
-  
-  .uxskills, .technicalSkills, .softSkils {
-    max-width: 100%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "uxskills"
-    "technicalSkills"
-    "softSkills";
-    text-align: center;
+  .icons {
+    height: 70px;
   }
-  
+  .uxskills, .technicalSkills, .softSkils{
+   width: 100%;
+  }
+
   .one, .two, .three {
-    width: 100%;
+    width: 30%;
     padding: 20px;
     text-align: center;
   }
@@ -364,7 +360,37 @@ nav {
     margin: 0;
     padding: 20px;
   }
+ 
+  #heroImg {
+    padding: 20px 50px 0px;
+  }
   
+.SpintheMeal, .CFIA, .Connect4u, .BHRO{
+  width: 100%;
+}
+
+.workimage{
+  width: 100%;
+  height: auto;
+}
+
+#footer{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.links{
+flex-direction: column;
+align-items: flex-start;
+padding: 20px;
+}
+.links ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footericons{
+  padding: 0px 0px 0px 30px;
+}
   .work {
     margin-right: 0;
     text-align: center;
